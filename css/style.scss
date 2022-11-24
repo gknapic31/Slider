@@ -1,0 +1,19 @@
+$fontfamily: Arial, Helvetica, sans-serif;
+$textcolor: #134880;
+
+h1{
+    color: $textcolor;
+    font-family: $fontfamily;
+}
+
+p{
+    font-family: $fontfamily;
+    line-height: 1.8;
+}
+
+div{
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin-top: 15%;
+}
