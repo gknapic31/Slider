@@ -11,9 +11,56 @@ p{
     line-height: 1.8;
 }
 
-div{
+.title {
     width: 400px;
     height: 300px;
     float: right;
-    margin-top: 15%;
+    margin-top: 0%;
+  }
+
+.image-grid {
+	--gap: 16px; 
+	--num-cols: 4;
+	--row-height: 300px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    border-radius: 4%;
+}
+
+.image-grid>img.active{
+    display: inline-block;
+}
+
+.arrowR{
+    border: #134880 solid 2px;
+    border-radius: 10%;
+    padding: 50%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrowL{
+    border: #b8c3ce solid 2px;
+    border-radius: 10%;
+    padding: 50%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.arrow{
+    float: right;
+    margin-top: 20%;
+    padding-right: 3%;
 }
